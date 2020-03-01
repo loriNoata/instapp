@@ -1,0 +1,27 @@
+
+//sizes
+$tile-width : 17vw;
+$tile-padding: 3vh; 
+$tile-height: 30vh; 
+ 
+
+//colors
+$red-bkg:  #DE6B48; // #F49390; 
+$yellow-bkg: #FFCC66; 
+$blue-bkg: #9BCBD6; 
+$greylight-bkg : whitesmoke; 
+$greylight-transparent :  rgba(255, 255, 255, 0.9); //#E7E6E6;
+$lila: #5087B3; 
+
+
+//
+$box-radius: 0;
+$box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1); 
+$default-text-color: #474747; 
+
+$breakpoints: (
+  'xsmall': ( min-width:  500px ),
+  'small':  ( min-width:  767px ),
+  'medium': ( min-width:  992px ),
+  'large':  ( min-width: 1200px )
+) !default;
