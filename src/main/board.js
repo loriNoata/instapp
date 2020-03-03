@@ -5,6 +5,10 @@ import React, {Component, useEffect, useState} from 'react';
 	export default function Board()  {
     const urlPhotos = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&safe_search=1&format=json&nojsoncallback=1&api_key=15b67c2a8b4288ff1fddf5eb56655cfb&content_type=1&is_getty=1';
     const [photos, setPhotos] = useState([]);
+    const [page, setPage] = useState(1);
+    const [pages, setPages] = useState();
+    const [perpage, setPerpage] = useState(100);
+    
     useEffect (() => {
         fetch(urlPhotos).then(response => {
             return response.json()
@@ -26,8 +30,8 @@ import React, {Component, useEffect, useState} from 'react';
         <div className="board-container">  
             <ul>
                 { photos.map(photo =>(
-                <li className="image-container">
-                    <img  src={setUrlFromData(photo)} key={photo.id} className="image-full"/>  
+                <li className="image-container" key={photo.id}>
+                    <img  src={setUrlFromData(photo)}  className="image-full"/>  
                 </li>
                 ))}
             </ul>
