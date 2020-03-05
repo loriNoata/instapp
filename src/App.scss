@@ -2,7 +2,6 @@
 
 .App {
   text-align: left;
- 
 }
  
  
@@ -20,11 +19,11 @@
 }
 
  .board-container {
-  min-height: 70vh;
-  height: auto;
-  background-color: rgb(238, 232, 232);
-  padding: 3vh ; 
-  margin: 10vh 0 0 0; 
+    min-height: 70vh;
+    height: auto;
+    background-color: rgb(238, 232, 232);
+    padding: 3vh ; 
+    margin: 10vh 0 0 0; 
  }
 
  ul {
@@ -35,12 +34,24 @@
 li {
   height: 39vh;
   flex-grow: 1;
-  margin: 1vh;
+  margin: 0.4vh; 
+  position: relative; 
 }
+
 
 img {
   max-height: 100%;
   min-width: 100%;
   object-fit: cover;
   vertical-align: bottom;
+}
+
+li span {
+  position: absolute; 
+  bottom: 5px;
+  left: 5px; 
+  background-color: rgba(240, 240, 240, 0.7); 
+  padding: 2px 10px 2px 5px;
+  text-transform: capitalize;
+  font-size: 14px;
 }

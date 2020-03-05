@@ -4,8 +4,8 @@ export const updateSearchTerm = value => ({
     value
 })
 
-export const usePhotosSearch = (searchTerm, pageNumber) => ({
-    type: 'USE_PHOTOS_SEARCH', 
+export const updatePageNumber = (searchTerm, pageNumber) => ({
+    type: 'UPDATE_PAGE_NUMBER', 
     searchTerm, 
     pageNumber
 })

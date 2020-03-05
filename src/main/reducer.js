@@ -1,5 +1,4 @@
 const initialState = {
-  photos: [], 
   searchTerm: ''
 }
 
@@ -11,12 +10,7 @@ const PhotosSearch = (state = initialState, action) => {
             ...state,
             searchTerm: action.value, 
           }
-          case 'USE_PHOTOS_SEARCH':
-          return {           
-            ...state,
-            searchTerm: action.searchTerm,
-            pageNumber: action.pageNumber,
-          }
+          
         default:
           return state
       }
