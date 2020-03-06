@@ -29,7 +29,7 @@ function Board(props)  {
 
         if (node) observer.current.observe(node)
         console.log("node", node);
- 
+
     }, [loading, hasMore])
 
 

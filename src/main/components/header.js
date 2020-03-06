@@ -7,9 +7,7 @@ function Header(props) {
 
 	const handleSearch = (e) => {
 		setSearchTerm(e.target.value); 
-	
 		props.onUpdateSearchTerm(e.target.value); 
-	
 	} 
 
 	return (
@@ -22,7 +20,6 @@ function Header(props) {
 const mapDispatchToProps = dispatch => {
      return {
 		onUpdateSearchTerm : (searchTerm) => dispatch(updateSearchTerm(searchTerm)) 
-	
      }
 }
  
