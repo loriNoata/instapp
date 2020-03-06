@@ -1,6 +1,6 @@
 import React, {Component, useState, useEffect} from 'react'; 
 import { connect } from 'react-redux'; 
-import {updateSearchTerm} from './../action';
+import {updateSearchTerm, updatePageNumber} from './../action';
  
 function Header(props) {
 	const [searchTerm, setSearchTerm] = useState(''); 
@@ -9,7 +9,7 @@ function Header(props) {
 		setSearchTerm(e.target.value); 
 	
 		props.onUpdateSearchTerm(e.target.value); 
-		props.onUpdatePageNumber(1);
+	
 	} 
 
 	return (
@@ -21,7 +21,7 @@ function Header(props) {
 
 const mapDispatchToProps = dispatch => {
      return {
-		onUpdateSearchTerm : (searchTerm) => dispatch(updateSearchTerm(searchTerm)), 
+		onUpdateSearchTerm : (searchTerm) => dispatch(updateSearchTerm(searchTerm)) 
 	
      }
 }

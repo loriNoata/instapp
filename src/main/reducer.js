@@ -9,8 +9,12 @@ const PhotosSearch = (state = initialState, action) => {
           return {           
             ...state,
             searchTerm: action.value, 
+        }
+        case 'UPDATE_PAGE_NUMBER': 
+          return {
+            ...state,
+            pageNumber: action.pageNumber
           }
-          
         default:
           return state
       }
