@@ -4,10 +4,7 @@ export const updateSearchTerm = value => ({
     value
 })
 
-export const updatePageNumber = (pageNumber) => ({
-    type: 'UPDATE_PAGE_NUMBER',  
-    pageNumber
-})
+
  
 
   
